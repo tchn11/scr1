@@ -94,6 +94,7 @@ build_verilator: $(sv_list)
 	-Wno-fatal \
 	$(VERILATOR_5X_OPTS) \
 	--top-module $(top_module) \
+	--timing \
 	-DSCR1_TRGT_SIMULATION \
 	-D$(SIM_TRACE_DEF) \
 	-D$(SIM_CFG_DEF) \
@@ -116,6 +117,7 @@ build_verilator_wf: $(sv_list)
 	-Wno-fatal \
 	$(VERILATOR_5X_OPTS) \
 	--top-module $(top_module) \
+	--timing \
 	-DSCR1_TRGT_SIMULATION \
 	-D$(SIM_TRACE_DEF) \
 	-D$(SIM_CFG_DEF) \
